@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Table des Ocres</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/cloudinary-video-player@4.0.1/dist/player.min.css">
+
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: white;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro {
+  width: min(500px, 100vw);
+  height: min(500px, 100vw);
+  object-fit: contain;
+}
+</style>
+</head>
+
+<body>
+
+<video
+  id="intro"
+  class="cld-video-player"
+  autoplay
+  muted
+  playsinline>
+</video>
+
+<script src="https://cdn.jsdelivr.net/npm/cloudinary-video-player@4.0.1/dist/player.min.js"></script>
+
 <script>
 (async function() {
   const player = await cloudinary.player("intro", {
